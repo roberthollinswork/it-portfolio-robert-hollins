@@ -9,8 +9,9 @@ I set up a TrueNAS‑based storage system using a dedicated SATA SSD as the boot
 To support secure remote connectivity, I configured Tailscale as a VPN solution and enabled SSH within TrueNAS. I also integrated FE File Explorer on iOS, allowing seamless access to the NAS from my iPhone. The final setup provides reliable, cross‑platform storage and remote access using mostly hardware I already had available.
 
 ## Key Troubleshooting
-- Resolved SMB share access issues by adjusting firewall and folder permissions
-- Diagnosed network visibility problems using ping and IP scanning tools
+The biggest issue I encountered during this project was attempting to use a USB flash drive as the boot device for TrueNAS. I initially tried configuring two separate flash drives—one for installation media and one intended to serve as the system’s boot drive—but the hardware simply wasn’t suited for the task. Boot attempts were extremely slow, often taking over two hours, and repeated formatting attempts failed to produce a stable or supported boot environment.
+
+After researching the issue, I replaced the USB boot device with an external SATA SSD. Once formatted and connected, the system booted cleanly within minutes, confirming that the SSD was the correct solution. This change resolved the performance bottleneck entirely and allowed the rest of the setup process to move forward smoothly.
 
 ## Skills Demonstrated
 - Troubleshooting
