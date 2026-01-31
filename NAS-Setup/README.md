@@ -1,4 +1,4 @@
-I # Home NAS Setup — Centralized Storage Solution
+## Home NAS Setup — Centralized Storage Solution
 
 ## Summary
 I built a DIY NAS using an old MSI laptop and open‑source tools to create a personal cloud for storing and remotely accessing important files. The project strengthened my confidence in configuring systems, troubleshooting hardware limitations, and setting up secure cross‑platform access through VPN and mobile file‑management tools.
